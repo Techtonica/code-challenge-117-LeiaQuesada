@@ -21,7 +21,7 @@ function intersection(a, b){
     // for loop to check elements of outter array
     for (let i = 0; i < a.length; i++) {
     // for loop to check ele of inner array 
-      for (let j = 0; j < b.length; i++) {
+      for (let j = 0; j < b.length; j++) {
         // check if outer array ele is in inner array
         if (a[i] === b[j]) {
         // if so, push ele into return array
