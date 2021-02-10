@@ -16,9 +16,22 @@
 // To get it working, don't worry about efficiency. Later we'll learn about specialized data structures that make this simpler/efficient.
 
 function intersection(a, b){
-  return(
-    // replace this line with your code
-  );
+  // create accumulator array to be returned
+  let same = [];
+    // for loop to check elements of outter array
+    for (let i = 0; i < a.length; i++) {
+    // for loop to check ele of inner array 
+      for (let j = 0; j < b.length; i++) {
+        // check if outer array ele is in inner array
+        if (a[i] === b[j]) {
+        // if so, push ele into return array
+          same.push(b[j]);
+        }
+      }
+    }
+  return same;
 }
+
+
 
 module.exports = intersection;
